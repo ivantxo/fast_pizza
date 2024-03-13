@@ -8,6 +8,7 @@ function AppLayout() {
   const isLoading = navigation.state === 'loading';
 
   return (
+    // h-screen uses 100dvh defined in tailwind.config.js in the extend section
     <div className="grid h-screen grid-rows-[auto_1fr_auto]">
       {isLoading && <Loader />}
 
