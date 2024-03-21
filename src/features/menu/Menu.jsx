@@ -14,6 +14,7 @@ function Menu() {
   );
 }
 
+// fetcher.load('/menu') from Order.jsx will use this function
 export async function loader() {
   return await getMenu();
 }
